@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textPergunta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="60dp"
+        android:text="Quantos deseja adicionar?"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:textStyle="normal" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnMenos"
+            android:layout_width="115dp"
+            android:layout_height="100dp"
+            android:layout_marginRight="90dp"
+            android:backgroundTint="#FFFFFF"
+            android:text="-"
+            android:textColor="#DF141313"
+            android:textSize="36sp"
+            android:textStyle="bold"
+            app:cornerRadius="50dp" />
+
+        <TextView
+            android:id="@+id/textQuantia"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center|right"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="50dp"
+            android:gravity="center|center_horizontal"
+            android:text="0"
+            android:textColor="#020202"
+            android:textSize="36sp"
+            android:textStyle="bold" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnMais"
+            android:layout_width="104dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="10dp"
+            android:backgroundTint="#FFFFFF"
+            android:text="+"
+            android:textColor="#DF141313"
+            android:textColorHint="#0E0D0D"
+            android:textSize="36sp"
+            app:cornerRadius="50dp" />
+    </LinearLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnOk"
+        android:layout_width="430dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:backgroundTint="#0BAF10"
+        android:text="@android:string/ok"
+        android:textSize="36sp"
+        app:cornerRadius="15dp" />
+
+</LinearLayout>
